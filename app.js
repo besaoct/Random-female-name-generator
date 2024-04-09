@@ -913,9 +913,20 @@ const Lname = {
 };
 
 
+
+
+
+
+
+
+
+
+
+
+
 function generateName() {
     const nameElement = document.getElementById("rname"); // Define nameElement
-    const meaningsElement = document.getElementById("meaning"); // Define nameElement
+    const meaningsElement = document.getElementById("meaning"); // Define meaningsElement
     const RandomTerm = (obj) => {
         const keys = Object.keys(obj);
         const randomKey = keys[Math.floor(Math.random() * keys.length)];
@@ -931,10 +942,9 @@ function generateName() {
     
     nameElement.innerHTML = genName;
     meaningsElement.textContent = genMeanings;
-    nameElement.style.opacity = 1;
-    nameElement.style.transform = "translateY(-20%)"; // Initial position off-screen to the left
 
-    // Apply animation by gradually moving the name from left to right
+    nameElement.style.opacity = 1;
+    nameElement.style.transform = "translateY(-20%)"; 
     nameElement.animate([
         { transform: "translateY(-20%)", opacity: 0 }, // Start position and opacity
         { transform: "translateY(0)", opacity: 1 } // End position and opacity
