@@ -926,7 +926,7 @@ function generateName() {
     const FName = RandomTerm(Fname);
     const LName = RandomTerm(Lname);
 
-    const genName = `🎉 <br/> ${FName.name} ${LName.name} <br/> ✨`;
+    const genName = `🎉 <p style="margin-top:1rem">  ${FName.name} ${LName.name} </p> `;
     const genMeanings = `${FName.name} means ${FName.meaning} and ${LName.name} means ${LName.meaning}`;
     
     nameElement.innerHTML = genName;
