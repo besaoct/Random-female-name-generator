@@ -74,6 +74,7 @@
 
         .namegen {
             color: rgb(247, 228, 199);
+            line-height: 2rem;
         }
 
         /* Button styles */
@@ -175,14 +176,16 @@
         </h1>
         <h2 class="title"> Random <br> Islamic Female Name Generator</h2>
         <div class="namegen">
-            <div id="rname" />
+            <div id="rname"></div>
         </div>
         <button onclick="generateName()" class="btn">Generate</button>
+        
+        <div id="meaning" style="font-size: small;"></div>
+        <footer style="color: #3d3d3d; margin-top: 5rem; ">
+            &copy; Besaoct <script>document.write(new Date().getFullYear())</script>
+        </footer>
     </div>
     
-    <footer style="color: #3d3d3d; margin-top: 50%;">
-        &copy; Besaoct <script>document.write(new Date().getFullYear())</script>
-    </footer>
     <script src="./app.js"></script>
     <script>
         document.fonts.ready.then(function() {
